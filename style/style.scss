@@ -1,7 +1,7 @@
 @import './variables';
-body {
-    background-color: $bg-color;
-    width: 100%;
+
+section {
+    background-color: $bg-light-gray;
     height: 100vh;
 }
 @mixin flex {
@@ -12,20 +12,51 @@ body {
     align-items: center;
 }
 .block {
-    
     // @include flex;
     width: 100%;
     height: auto;
-    background-color: $white;  
-    margin-top: 20px; 
+    margin-top: 20px;
+    background-color: $white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    h3{
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: $text-color;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    } 
+    .inner__style {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .text {
+        padding:10px;
+      }
 
+}
+.block .text__style:hover {
+    color:$primary-color;
 }
 .block .img {
     width: 100%;
     height: auto;
     transition: all 0.5s ease;
 }
-.block .img__style:hover {
-    
+.block:hover .img__style{
     opacity: 0.5;
+}
+.block .btn__style {
+    background-color: rgba($bluecolor, $alpha:0.2);
+    color: $text-blue;
+    font-size: 20px;
+    padding: 8px 30px;
+    text-transform: capitalize;
+    font-weight: 600;
+    &:hover {
+        background-color: $text-blue;
+        color: $white;
+    }   
+
 }
