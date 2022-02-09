@@ -4,7 +4,7 @@ section {
 }
 
 .block {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: 20px;
   background-color: #fff;
@@ -28,7 +28,7 @@ section {
 }
 
 .block .text {
-  padding: 10px;
+  padding: 12px;
 }
 
 .block .text__style:hover {
@@ -47,7 +47,7 @@ section {
 }
 
 .block .btn__style {
-  background-color: rgba(32, 95, 211, 0.2);
+  background-color: rgba(32, 95, 211, 0.1);
   color: #0a58ca;
   font-size: 20px;
   padding: 8px 30px;
@@ -58,5 +58,31 @@ section {
 .block .btn__style:hover {
   background-color: #0a58ca;
   color: #fff;
+}
+
+.block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+
+.block-item .child-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.block-item .child__Style {
+  right: 10px;
+  left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
